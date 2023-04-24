@@ -1,2 +1,1 @@
-# CE2_python
-Repository for Documenting Activities in Python Class (CE2)
+This repository serves as a comprehensive documentation hub for the CE2 Python class. It contains organized and detailed records of all activities and assignments completed throughout the course. The repository is designed to provide an easy-to-navigate and user-friendly resource for students to review and reference their work, as well as for instructors to track progress and provide feedback. With clear and concise documentation, this repository aims to enhance the learning experience and facilitate efficient collaboration among students and instructors in the CE2 Python class.
