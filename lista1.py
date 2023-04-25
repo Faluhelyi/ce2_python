@@ -22,6 +22,10 @@ class lista1:
         return media
     
     def sort(self, ascending = True):
+        """
+        Recebe um dicionário. Para cada chave do dicionário,\n
+        a funcao vai ordenar as valores da chave correspondente
+        """
         sort = {}
         for k in self.obs:
             if ascending == True:
@@ -54,9 +58,21 @@ class lista1:
                 mediana[k] = self.obs[k][pos]
 
         return mediana
-
-
     
+    def moda(self):
+        self.obs = lista1.sort(self, ascending= False)
+        moda = {}
+        for k in self.obs:
+            moda[k] = max(self.obs[k], key=self.obs[k].count)
+
+            if self.obs[k].count(moda[k]) == 1:
+                moda[k] = 'Não tem moda'
+
+        return moda
+
+
+
+
 obs = {'Acre': [0.71, 75.3], 'Amapá': [0.688, 75], 'Amazonas': [0.7, 73], 'Pará': [0.69, 73],\
        'Rondônia': [0.7, 72.2], 'Roraima': [0.669, 72.9], 'Tocantins': [0.731, 74.6]}
 
@@ -87,3 +103,8 @@ print(f'2. Calcule as medianas do IDH e da expectativa de vida: {lista1.mediana(
 #########
 ### 3 ###
 #########
+obs3 = lista1_values({'moda para IDH 2021': [1,2,3,4,4,4,5,6,6, 6], 'moda para Expectativa de vida': exp_vida})
+print(f'3. Existe alguma moda no IDH e na expectativa de vida? Caso afirmativo, qual(is) a(s) moda(s): {lista1.moda(obs3)}'
+)
+
+print(lista1.sort(obs3, ascending=False))
