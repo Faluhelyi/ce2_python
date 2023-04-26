@@ -36,3 +36,5 @@ df = lambda x: 1
 print(
     exercise(f, df, x0, tol).get_root()
 )
+
+##
