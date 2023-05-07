@@ -38,8 +38,8 @@ print(f"Estimativa da area do circulo unitario por Monte Carlo: \n1_000 repetico
       Abs. error ~={abs(r11-np.pi)} \n500_000 repeticoes: Area ~= {r12},\
       Abs. error ~={abs(r12-np.pi)}")
 print("------------------------------ solucao algoritmo 2 ------------------------------")
-r11 = lista1_2(1_000).estimate_area_unit_circ2()
-r12 = lista1_2(500_000).estimate_area_unit_circ2()
+r11 = lista1_2(n= 1_000).estimate_area_unit_circ2()
+r12 = lista1_2(n= 500_000).estimate_area_unit_circ2()
 print(f"Estimativa da area do circulo unitario por Monte Carlo: \n1_000 repeticoes: Area ~= {r11},\
       Abs. error ~={abs(r11-np.pi)} \n500_000 repeticoes: Area ~= {r12},\
       Abs. error ~={abs(r12-np.pi)}")
