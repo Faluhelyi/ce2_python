@@ -1,7 +1,7 @@
 class lista1_3:
     def __init__(self, n: int):
         self.n = n
-    def factorial(self):
+    def factorial(self) -> int:
         n = self.n
         if n < 0:
             raise Exception('parameter n must not be negative')
@@ -19,11 +19,14 @@ class lista1_3:
             l = [None]*(linha+1)
             for pos in range(len(l)):
                 # nCr = n!/((n-r)!*r!)
-                l[pos] = lista1_3(linha).factorial()/(lista1_3(linha-pos).factorial()*lista1_3(pos).factorial())
+                l[pos] = int(lista1_3(linha).factorial()/(lista1_3(linha-pos).factorial()*lista1_3(pos).factorial()))
             triangle_lines[linha] = l
             linha = linha +1
 
         return triangle_lines[n]
             
-
-print(lista1_3(10).pascal_triangle())
+##############################
+## Exemplo de uso da funcao ##
+##############################
+for i in range(7):
+    print(lista1_3(i).pascal_triangle())
