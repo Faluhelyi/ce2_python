@@ -1,3 +1,4 @@
+# Igor, 180122207
 class lista1_1:
     def __init__(self, x0: float, tol: float = None, epsilon: float = None, delta: float = None):
         """

@@ -1,3 +1,4 @@
+# Igor, 180122207
 class lista1_2:
     def __init__(self, n: int):
         """
