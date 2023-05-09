@@ -8,6 +8,7 @@ class lista1_2:
     def estimate_area_unit_circ(self):
         """
         function to estimate the area of an unit circle by Monte Carlo
+        using random.uniform(-1, 1)
         """
         import random
         num_inside = 0
@@ -19,6 +20,10 @@ class lista1_2:
         return 4*(num_inside/self.n)
     
     def estimate_area_unit_circ2(self):
+        """
+        function to estimate the area of an unit circle by Monte Carlo
+        using random.randint(-1 ,1)
+        """
         import random
         num_inside = 0
         for i in range(self.n):

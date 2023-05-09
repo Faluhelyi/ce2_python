@@ -1,7 +1,14 @@
 class lista1_3:
     def __init__(self, n: int):
+        """
+        Get hyperparams
+        """
         self.n = n
+        
     def factorial(self) -> int:
+        """
+        function to calculate n! given n
+        """
         n = self.n
         if n < 0:
             raise Exception('parameter n must not be negative')
@@ -11,6 +18,9 @@ class lista1_3:
             return n*lista1_3(n-1).factorial()
         
     def pascal_triangle(self):
+        """
+        Produce n-th row of the Pascal's triangle
+        """
         n = self.n
         linha = 0
         pos = 0
@@ -28,5 +38,5 @@ class lista1_3:
 ##############################
 ## Exemplo de uso da funcao ##
 ##############################
-for i in range(7):
+for i in range(11):
     print(lista1_3(i).pascal_triangle())
